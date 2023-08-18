@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+ul,li {
+    list-style: none;
+    padding: 0px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+:root{
+    --leftValue : 20px;
+    --starWidth : 50px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+
+    width: 380px;
+    height: 350px;
+    margin: auto;
+    background-color: hsla(216, 56%, 12%, 0.8);
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.selectRating{
+
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+.row1{
+    width: 40px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: hsla(213, 19%, 18%,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2{
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.row2 h2 {
+    margin-bottom: 10px;
+}
+
+.row2 p {
+    color: hsla(0, 0%, 100%,0.6);
+}
+
+li{
+    width: var(--starWidth);
+    background-color:  rgba(46, 53, 62, 0.85);
+    margin-right: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsla(0, 0%, 100%,0.6);
+    cursor: pointer;
+}
+
+.row3 ul li:hover{
+    background-color: hsla(25, 100%, 50%, 0.633);
+}
+
+.row3{
+    margin-bottom: 25px;
+}
+
+.selected {
+    background-color:hsla(216, 12%, 54%,1); ;
+}
+
+.row4 button{
+    width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: hsla(25, 100%, 50%, 0.633);
+    color: hsla(0, 0%, 100%,0.8);
+    text-transform: uppercase;
+    height: 35px;
+    cursor: pointer;
+    font-weight: 700;
+}   
+
+.row4 button:hover{
+    background-color: hsla(0, 0%, 100%,1);
+    color:hsla(25, 100%, 50%, 0.633);
+}
+
+#5{
+    margin-right: 0px;
+}
+
+.ratingState{
+    display: none;
+}
+
+.row5{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.row6{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.row6 p{
+display: flex;
+justify-content: center;
+background-color: rgba(46, 53, 62, 0.85);
+padding: 5px;
+border-radius: 12px;
+color: hsla(25, 100%, 50%, 0.633);
+}
+
+.thankYouHeading  {
+    font-size: 30px;
+color: white;
+text-align: center;
+border-top: 5px;
+font-weight: 600;
+}
+
+.thankYouSubText  {
+    width: 336px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    color: hsla(0, 0%, 100%,0.8);   
+}
